@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /*Importando Fonte*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+} /* Reset global: remove preenchimento e margens padrão, define a fonte para 'Montserrat'*/
+
+/* Nav-bar responsivo*/
+.header-responsivo {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo {
+    width: 4rem;
+}
+  
+.nav-bar {
+display: flex;
+align-items: center;
+}
+
+.nav-links-1234 {
+list-style: none;
+display: flex;
+align-items: center;
+}
+
+.nav-links-1234 li {
+margin-right: 20px;
+}
+
+.nav-links-1234 a {
+text-decoration: none;
+color: #000;
+font-weight: bold;
+}
+
+.button-container-1234 {
+    display: flex;
+    gap: 10px;
+}
+  
+.button-1234 {
+    padding: 10px 15px;
+    background-color: #ffa500;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.burger-menu {
+font-size: 1.5em;
+cursor: pointer;
+display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links-1234 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav-links-1234.show {
+        display: flex;
+    }
+
+    .nav-links-1234 li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+/*Formulario de contato*/
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 10px;
+    }
+}
+
+/* Rodapé*/
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+.footer-contact a {
+    color: #fff;
+}
+
+.footer-social p {
+    margin: 0;
+}

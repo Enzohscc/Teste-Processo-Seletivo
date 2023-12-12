@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /*Importando Fonte*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+} /* Reset global: remove preenchimento e margens padrão, define a fonte para 'Montserrat'*/
+
+/*NAV-BAR RESPONSIVO*/
+.header-responsivo {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo {
+    width: 4rem;
+}
+  
+.nav-bar {
+display: flex;
+align-items: center;
+}
+
+.nav-links-1234 {
+list-style: none;
+display: flex;
+align-items: center;
+}
+
+.nav-links-1234 li {
+margin-right: 20px;
+}
+
+.nav-links-1234 a {
+text-decoration: none;
+color: #000;
+font-weight: bold;
+}
+
+.button-container-1234 {
+    display: flex;
+    gap: 10px;
+}
+  
+.button-1234 {
+    padding: 10px 15px;
+    background-color: #ffa500;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.burger-menu {
+font-size: 1.5em;
+cursor: pointer;
+display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links-1234 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav-links-1234.show {
+        display: flex;
+    }
+
+    .nav-links-1234 li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+/*CARDS RESPONSIVOS*/
+.property-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.property-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.property-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.property-description {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.property-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+@media (min-width: 768px) {
+    .property-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (min-width: 992px) {
+    .property-card {
+        width: calc(33.33% - 40px);
+    }
+}
+
+.btnED {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*FOOTER RESPONSIVO*/
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+.footer-contact a {
+    color: #fff;
+}
+
+.footer-social p {
+    margin: 0;
+}

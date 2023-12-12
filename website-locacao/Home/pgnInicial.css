@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); /*Importando Fonte*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+} /* Reset global: remove preenchimento e margens padrão, define a fonte para 'Montserrat'*/
+
+/*NAV-BAR RESPONSIVO*/
+.header-responsivo {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo {
+    width: 4rem;
+}
+  
+.nav-bar {
+display: flex;
+align-items: center;
+}
+
+.nav-links-1234 {
+list-style: none;
+display: flex;
+align-items: center;
+}
+
+.nav-links-1234 li {
+margin-right: 20px;
+}
+
+.nav-links-1234 a {
+text-decoration: none;
+color: #000;
+font-weight: bold;
+}
+
+.button-container-1234 {
+    display: flex;
+    gap: 10px;
+}
+  
+.button-1234 {
+    padding: 10px 15px;
+    background-color: #ffa500;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.burger-menu {
+font-size: 1.5em;
+cursor: pointer;
+display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links-1234 {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .nav-links-1234.show {
+        display: flex;
+    }
+
+    .nav-links-1234 li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
+
+/*Seção de container para apresentação*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    margin-top: 5rem;
+}
+
+.about {
+    flex: 1;
+    width: 30%;
+    gap: 20px;
+    min-width: 20rem;
+    max-width: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ver-mais-button {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#img1 {
+    border-radius: 10px;
+    width: 55rem;
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about {
+        max-width: 100%;
+    }
+
+    #img1 {
+        max-width: 100%;
+    }
+}
+
+/*LINHA*/
+.hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.hr {
+    width: 30%;
+    border: none;
+    height: 1px;
+    background-color: #000;
+}
+
+/*Cards de qualidade*/
+.quality-and-safety {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10rem;
+}
+
+.card-csspuro {
+    max-width: 300px;
+    width: 100%;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-csspuro img {
+    width: 10rem;
+    max-height: 150px; 
+    border-radius: 8px 8px 0 0; 
+}
+
+.card-csspuro h2 {
+    color: #ffa500;
+}
+
+.card-csspuro p {
+    color: #666;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Seção de valores*/
+.company-values-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 10rem;
+    max-width: 70rem;
+    background-color: #ffc65c; /* Apenas para visualização */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-values-section h1,
+.company-values-section p {
+    text-align: center;
+}
+
+.property-cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 5rem;
+}
+
+.property-card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.property-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.property-card-content {
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .property-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .property-card {
+        width: 100%;
+    }
+}
+
+/* Rodapé */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+.footer-contact a {
+    color: #fff;
+}
+
+.footer-social p {
+    margin: 0;
+}
+
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
